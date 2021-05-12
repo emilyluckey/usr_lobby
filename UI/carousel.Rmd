@@ -48,7 +48,9 @@ web$html_filename <- "carousel.html"
     tags$a(class="carousel-item", href="#two!",
            label_act
            ),
-    tags$a(class="carousel-item", href="#three!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_c.png")),
+    tags$a(class="carousel-item", href="#three!",
+           label_act2
+           ),
     tags$a(class="carousel-item", href="#four!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_d.png")),
     tags$a(class="carousel-item", href="#five!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_e.png"))
   )
@@ -61,6 +63,14 @@ web$html_filename <- "carousel.html"
 label_act <- tags$div(
   class="box",
   tags$img(src="http://usr.ntpu.edu.tw/lyadmin/pages/uploads/image/cus1_ttahpdwouf.jpg"),
+  tags$div(class="label","活動")
+)
+```
+
+```{r label_act2}
+label_act <- tags$div(
+  class="box",
+  tags$img(src="http://usr.ntpu.edu.tw/lyadmin/pages/uploads/image/cus1_bisyzh65si.jpg"),
   tags$div(class="label","活動")
 )
 ```
