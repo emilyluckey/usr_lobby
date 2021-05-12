@@ -1,15 +1,27 @@
 body {
   font-family: "Noto Serif TC", sans-serif;
 }
-.label {
-  width: 0 auto;
+.box {
+  width: 250px;
+  height: auto;
+}
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+.box .label {
+  color: black;
+  width: 30%;
   padding: 10px;
   border: 5px solid red;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: white;
   margin: 0 auto;
-  writing-mode: tb-rl;
-  font-size: 130%;
+  writing-mode: vertical-lr;
+  font-size: 150%;
+  position: absolute; 
+  bottom: -50%;
+  left: 105%;
 }
 /*
 body {

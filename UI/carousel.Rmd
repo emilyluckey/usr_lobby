@@ -45,7 +45,9 @@ web$html_filename <- "carousel.html"
     tags$a(class="carousel-item", href="#one!", 
            card1
            ),
-    tags$a(class="carousel-item", href="#two!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_b.png")),
+    tags$a(class="carousel-item", href="#two!",
+           label_act
+           ),
     tags$a(class="carousel-item", href="#three!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_c.png")),
     tags$a(class="carousel-item", href="#four!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_d.png")),
     tags$a(class="carousel-item", href="#five!", tags$img(src="https://materializecss.github.io/materialize/images/placeholder/250x250_e.png"))
@@ -53,13 +55,24 @@ web$html_filename <- "carousel.html"
   
 ```
 
+#### label
+
+```{r label_act}
+label_act <- tags$div(
+  class="box",
+  tags$img(src="http://usr.ntpu.edu.tw/lyadmin/pages/uploads/image/cus1_ttahpdwouf.jpg"),
+  tags$div(class="label","活動")
+)
+```
+
+
 #### card 1
 
 ```{r card1}
 card1 <- tags$div(class="card", 
         tags$div(class="card-image", 
           tags$img(src="https://materializecss.github.io/materialize/images/sample-1.jpg"),
-          tags$span(class="card-title"," Card Title")
+          tags$span(class="card-title","Card Title")
         ),
         tags$div(class="card-content", 
           tags$p( "I am a very simple card. I am good at containing small bits of information.
